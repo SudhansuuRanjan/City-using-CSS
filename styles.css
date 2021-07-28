@@ -1,0 +1,581 @@
+body,html {
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+
+#wrapper {
+position:absolute;
+height:100vh;
+width:100vw;
+background:#fff;
+padding:0;
+margin:0;
+overflow-y:hidden ;
+overflow-x:hidden ;
+}
+
+#sky {
+position:absolute ;
+height:60vh;
+width:100vw;
+top:0;
+left:0;
+background:linear-gradient(
+150deg,#89e1ff,#76ddff,#62d8ff,#4ed3ff,#3bceff
+);
+}
+
+#land {
+position:absolute ;
+height:40vh;
+width:100vw;
+top:60vh;
+left:0;
+background:linear-gradient(
+150deg,#5fd85f,#4fd44f,#3fd03f,#2aab2a
+);
+}
+
+#sun {
+position:absolute ;
+font-size:6rem;
+top:1vh;
+left:1vw;
+}
+
+#cloud-1 {
+position:absolute ;
+font-size:6.5rem;
+left:37vw;
+top:-3vh;
+}
+
+#cloud-2 {
+position:absolute ;
+font-size:7rem;
+left:60vw;
+top:-1vh;
+}
+
+#cloud-3 {
+position:absolute ;
+font-size:6rem;
+left:44vw;
+top:4vh;
+}
+
+#bird-1{
+position:absolute ;
+font-size:1.5rem;
+top:46vh;
+transform:rotateY(180deg);
+left:-15vw;
+z-index:999;
+animation:fly 15s linear infinite;
+animation-delay:1s;
+}
+
+@keyframes fly {
+0% {
+left:-5vw;
+top:46vh;
+}
+20% {
+left:10vw;
+top:43vh;
+}
+40% {
+left:40vw;
+top:48vh;
+}
+60% {
+left:60vw;
+top:46.5vh;
+}
+80% {
+left:80vw;
+top:40vh;
+}
+100% {
+left:105vw;
+top:45vh;
+}
+}
+
+#parachut {
+position:absolute ;
+font-size:3rem;
+top:0vh;
+left:55vw;
+transform:rotateY(180deg);
+animation:parachute 30s linear infinite;
+animation-delay:1s;
+z-index:90;
+}
+
+@keyframes parachute {
+0% {
+left:55vw;
+top:0vh;
+}
+20% {
+left:65vw;
+top:10vh;
+}
+40% {
+left:70vw;
+top:20vh;
+}
+60% {
+left:60vw;
+top:30vh;
+}
+80% {
+left:75vw;
+top:40vh;
+}
+100% {
+left:100vw;
+top:50vh;
+}
+}
+
+#home-1-1 {
+position:absolute ;
+top:-8vh;
+font-size:4rem;
+z-index:1;
+}
+
+#home-1-2 {
+position:absolute ;
+top:-15vh;
+font-size:4rem;
+}
+
+#home-2-1 {
+position:absolute ;
+top:-8vh;
+font-size:4rem;
+left:22vw;
+z-index:1;
+}
+
+#home-2-2 {
+position:absolute ;
+top:-15vh;
+font-size:4rem;
+left:22vw;
+}
+
+#home-3 {
+position:absolute ;
+top:-8vh;
+font-size:4rem;
+left:43vw;
+z-index:1;
+}
+
+#home-4 {
+position:absolute ;
+top:-5.5vh;
+font-size:3rem;
+left:66vw;
+z-index:1;
+}
+
+#temple {
+position:absolute ;
+top:-8vh;
+font-size:4rem;
+left:81vw;
+z-index:1;
+}
+
+#road {
+position:absolute ;
+background:#677685;
+width:100%;
+height:25vh;
+top:8vh;
+left:0;
+}
+
+#lane-1 {
+position:absolute ;
+background:#e6e6e6;
+height:1vh;
+width:20vw;
+top:50%;
+left:2%;
+}
+
+#lane-2 {
+position:absolute ;
+background:#e6e6e6;
+height:1vh;
+width:20vw;
+top:50%;
+left:30%;
+}
+
+#lane-3 {
+position:absolute ;
+background:#e6e6e6;
+height:1vh;
+width:20vw;
+top:50%;
+left:58%;
+}
+
+#lane-4 {
+position:absolute ;
+background:#e6e6e6;
+height:1vh;
+width:20vw;
+top:50%;
+left:90%;
+}
+
+#vehicle-1 {
+position:absolute ;
+font-size:4rem;
+top:-6.5vh;
+left:105vw;
+z-index:40;
+animation:move1 7s linear infinite;
+}
+
+@keyframes move1 {
+0% {
+left:105vw;
+}
+100% {
+left:-15vw;
+}
+}
+
+#vehicle-2 {
+position:absolute ;
+font-size:4rem;
+top:-1vh;
+left:105vw;
+animation:move2 4s linear infinite;
+animation-delay:1.5s;
+}
+
+@keyframes move2 {
+0% {
+left:105vw;
+}
+100% {
+left:-15vw;
+}
+}
+
+#vehicle-3 {
+position:absolute ;
+font-size:4rem;
+top:-6.5vh;
+left:105vw;
+z-index:50;
+animation:move3 7s linear infinite;
+animation-delay:3.5s;
+}
+
+@keyframes move3 {
+0% {
+left:105vw;
+}
+100% {
+left:-15vw;
+}
+}
+
+#vehicle-4 {
+position:absolute ;
+font-size:3rem;
+top:16vh;
+left:105vw;
+z-index:90;
+transform:rotateY(180deg);
+animation:move4 7s linear infinite;
+}
+
+@keyframes move4 {
+100% {
+left:105vw;
+}
+0% {
+left:-15vw;
+}
+}
+
+#vehicle-5 {
+position:absolute ;
+font-size:5rem;
+top:6vh;
+left:110vw;
+transform:rotateY(180deg);
+animation:move5 5s linear infinite;
+animation-delay:2.5s;
+}
+
+@keyframes move5
+{
+100% {
+left:105vw;
+}
+0% {
+left:-15vw;
+}
+}
+
+#vehicle-6 {
+position:absolute ;
+font-size:3rem;
+top:15vh;
+left:105vw;
+z-index:90;
+transform:rotateY(180deg);
+animation:move6 8s linear infinite;
+animation-delay:3s;
+}
+
+@keyframes move6 {
+100% {
+left:105vw;
+}
+0% {
+left:-15vw;
+}
+}
+
+#rocket {
+position:absolute ;
+top:40vh;
+left:-8vw;
+font-size:1.5rem;
+animation:launch 15s linear infinite;
+}
+
+@keyframes launch {
+0% {
+top:40vh;
+left:0vw;
+}
+20% {
+top:35vh;
+left:5vw;
+}
+30% {
+top:30vh;
+left:10vw;
+}
+40% {
+top:25vh;
+left:15vw;
+}
+50% {
+top:20vh;
+left:20vw;
+}
+60% {
+top:15vh;
+left:25vw;
+}
+70% {
+top:10vh;
+left:30vw;
+}
+80% {
+top:5vh;
+left:35vw;
+}
+90% {
+top:0vh;
+left:40vw;
+}
+100% {
+top:-5vh;
+left:45vw;
+}
+}
+
+#footer {
+position:fixed;
+bottom:0vw;
+right:0vw;
+font-size:0.7rem;
+color:#fff;
+font-family: 'Raleway', sans-serif;
+}
+
+#copter {
+position:absolute ;
+top:17vh;
+font-size:1.5rem;
+right:0;
+animation:copter 15s linear infinite;
+}
+
+@keyframes copter {
+0% {
+top:17vh;
+left:105vw;
+}
+20% {
+top:19vh;
+left:70vw;
+}
+30% {
+top:21vh;
+left:60vw;
+}
+40% {
+top:20vh;
+left:45vw;
+}
+50% {
+top:25vh;
+left:30vw;
+}
+80% {
+top:20vh;
+left:10vw;
+}
+100% {
+top:22vh;
+left:0vw;
+}
+}
+
+#person-1 {
+position:absolute ;
+left:5vw;
+top:-1vh;
+font-size:2rem;
+z-index:30;
+}
+
+#person-2 {
+position:absolute ;
+left:77vw;
+top:-1vh;
+font-size:2rem;
+z-index:1;
+}
+
+#person-3 {
+position:absolute ;
+left:45vw;
+top:-2vh;
+font-size:2.1rem;
+z-index:1;
+}
+
+#person-4 {
+position:absolute ;
+left:25vw;
+top:-2vh;
+font-size:2.1rem;
+z-index:1;
+}
+
+#dog-1 {
+position:absolute ;
+left:20vw;
+top:2vh;
+font-size:1.29rem;
+z-index:1;
+}
+
+#dog-2 {
+position:absolute ;
+left:12vw;
+top:2.5vh;
+font-size:1.29rem;
+z-index:1;
+transform:rotateY(170deg);
+}
+
+#cat {
+position:absolute ;
+left:60vw;
+top:0vh;
+font-size:1.29rem;
+z-index:1;
+}
+
+#person-5 {
+position:absolute ;
+left:62vw;
+top:1vh;
+transform:rotateY(180deg);
+font-size:2rem;
+z-index:30;
+}
+
+#plant-1 {
+position:absolute ;
+top:33vh;
+left:1vw;
+font-size:2rem;
+}
+
+#plant-2 {
+position:absolute ;
+top:33vh;
+left:13vw;
+font-size:2rem;
+}
+
+#plant-3 {
+position:absolute ;
+top:33vh;
+left:27vw;
+font-size:2rem;
+}
+
+#plant-4 {
+position:absolute ;
+top:33vh;
+left:38vw;
+font-size:2rem;
+}
+
+#plant-5 {
+position:absolute ;
+top:33vh;
+left:49vw;
+font-size:2rem;
+}
+
+#plant-6 {
+position:absolute ;
+top:33vh;
+left:60vw;
+font-size:2rem;
+}
+
+#plant-7 {
+position:absolute ;
+top:33vh;
+left:71vw;
+font-size:2rem;
+}
+
+#plant-8 {
+position:absolute ;
+top:33vh;
+left:80vw;
+font-size:2rem;
+}
+
+#plant-9 {
+position:absolute ;
+top:33vh;
+left:90vw;
+font-size:2rem;
+}
